@@ -17,7 +17,7 @@ set(CMAKE_CXX_STANDARD 23)
 
 # Add source to this project's executable.
 add_executable (aoc23 "aoc23.cpp")
-target_sources(aoc23 PRIVATE FILE_SET CXX_MODULES FILES "Utils/Parser.ixx" "Solutions/Day1.ixx" "Utils/AoC.ixx" "Utils/Input.ixx" "Utils/Strings.ixx" "Solutions/Day2.ixx" "Solutions/Day3.ixx" "Solutions/Day4.ixx" "Solutions/Day5.ixx" "Solutions/Day6.ixx" "Solutions/Day7.ixx")
+target_sources(aoc23 PRIVATE FILE_SET CXX_MODULES FILES "Utils/Parser.ixx" "Solutions/Day1.ixx" "Utils/AoC.ixx" "Utils/Input.ixx" "Utils/Strings.ixx" "Solutions/Day2.ixx" "Solutions/Day3.ixx" "Solutions/Day4.ixx" "Solutions/Day5.ixx" "Solutions/Day6.ixx" "Solutions/Day7.ixx" "Solutions/Day8.ixx")
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

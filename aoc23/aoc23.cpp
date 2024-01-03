@@ -12,6 +12,7 @@ import Solutions.Day4;
 import Solutions.Day5;
 import Solutions.Day6;
 import Solutions.Day7;
+import Solutions.Day8;
 import Utils.AoC;
 import Utils.Input;
 
@@ -22,7 +23,7 @@ struct Solver
 };
 
 // comment out assignment to query user
-std::optional<int> const s_dayOverride = 7;
+std::optional<int> const s_dayOverride = 8;
 
 int GetDay( char const* i_arg )
 {
@@ -71,6 +72,7 @@ int main(int i_argCount, char const** i_args)
 		{5, {Day5SolveA, Day5SolveB}},
 		{6, {Day6SolveA, Day6SolveB}},
 		{7, {Day7SolveA, Day7SolveB}},
+		{8, {Day8SolveA, Day8SolveB}},
 	};
 
 	int const day = GetDay( i_argCount > 1 ? i_args[ 1 ] : nullptr );
@@ -78,12 +80,12 @@ int main(int i_argCount, char const** i_args)
 
 	if ( part == AoC::Part::A || part == AoC::Part::Both )
 	{
-		std::cout << solvers.at( day ).solveA( Utils::Input( "Inputs/7.txt" ) ) << std::endl;
+		std::cout << solvers.at( day ).solveA( Utils::Input( "Inputs/8.txt" ) ) << std::endl;
 	}
 
 	if ( part == AoC::Part::B || part == AoC::Part::Both )
 	{
-		std::cout << solvers.at( day ).solveB( Utils::Input( "Inputs/7.txt" ) ) << std::endl;
+		std::cout << solvers.at( day ).solveB( Utils::Input( "Inputs/8test3.txt" ) ) << std::endl;
 	}
 
 	return 0;
